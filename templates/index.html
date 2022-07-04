@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <link href="{{url_for('static', filename = 'style.css')}}" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <form method="POST">
+            <h2>Tecnetium : Create your personalized showcase website</h2>
+            <p>For links use https://site.com/page format</p>
+            <a href="https://html.imageonline.co/" class="link">For logo & images use this</a>
+            <a href="https://youtu.be/X2X9owtZ-gs" class="link">Click here for the tutorial</a>
+            <p class="part">-</p>
+            <p class="underline">Main informations about your Company</p>
+            <p>Logo <input type="text" name="LOGO"></p>
+            <p>Company Name <input type="text" name="NAME"></p>
+            <p>Little Description <input type="text" name="BIO"></p>
+            <p>Complete description with all the informations <input type="text" name="DESC"></p>
+            <p>Main Image <input type="text" name="IMG0"></p>
+            <p class="part">-</p>
+            <p class="underline">Image Gallery</p>
+            <p>First Gallery Image <input type="text" name="IMG1"></p>
+            <p>Second Gallery Image <input type="text" name="IMG2"></p>
+            <p>Third Gallery Image <input type="text" name="IMG3"></p>
+            <p>Fourth Gallery Image <input type="text" name="IMG4"></p>
+            <p>Fifth Gallery Image <input type="text" name="IMG5"></p>
+            <p>Sixth Gallery Image <input type="text" name="IMG6"></p>
+            <p>Seventh Gallery Image <input type="text" name="IMG7"></p>
+            <p>Eighth Gallery Image <input type="text" name="IMG8"></p>
+            <p class="part">-</p>
+            <p class="underline">Your Socials</p>
+            <p>First Social Text <input type="text" name="SOCIAL1_NAME"></p>
+            <p>First Social Link <input type="text" name="SOCIAL1_LINK"></p>
+            <p>Second Social Text <input type="text" name="SOCIAL2_NAME"></p>
+            <p>Second Social Link <input type="text" name="SOCIAL2_LINK"></p>
+            <p>Third Social Text <input type="text" name="SOCIAL3_NAME"></p>
+            <p>Third Social Link <input type="text" name="SOCIAL3_LINK"></p>
+            <p>Fourth Social Text <input type="text" name="SOCIAL4_NAME"></p>
+            <p>Fourth Social Link <input type="text" name="SOCIAL4_LINK"></p>
+            <p class="part">-</p>
+            <p class="underline">Set and style your site</p>
+            <p class="underline">Site Language</p>
+                <p>English : <input type="radio" name="LANG" value="0"/><br /></p>
+                <p>Spanish : <input type="radio" name="LANG" value="1"/><br /></p>
+                <p>French : <input type="radio" name="LANG" value="2"/></p>
+            <p class="underline">Text Font</p>
+                <p class="arial">Arial : <input type="radio" name="POLICE" value="0"/><br /></p>
+                <p class="verdana">Verdana : <input type="radio" name="POLICE" value="1"/><br /></p>
+                <p class="times_new_roman">Times New Roman : <input type="radio" name="POLICE" value="2"/><br /></p>
+                <p class="monaco">Monaco : <input type="radio" name="POLICE" value="3"/></p>
+            <p class="underline">Background Color</p>
+                <p class="zero">■ <input type="radio" name="BACKGROUND" value="0"/><br /></p>
+                <p class="one">■ <input type="radio" name="BACKGROUND" value="1"/><br /></p>
+                <p class="two">■ <input type="radio" name="BACKGROUND" value="2"/><br /></p>
+                <p class="three">■ <input type="radio" name="BACKGROUND" value="3"/><br /></p>
+                <p class="four">■ <input type="radio" name="BACKGROUND" value="4"/><br /></p>
+                <p class="five">■ <input type="radio" name="BACKGROUND" value="5"/><br /></p>
+                <p class="six">■ <input type="radio" name="BACKGROUND" value="6"/></p>
+            <p class="underline">Logo & Name Style</p>
+                <p>1 : <input type="radio" name="LOGO_NAME_PLACEMENT" value="0"/><br /></p>
+                <img src="{{url_for('static', filename = 'IMG10.png')}}" width="300">
+                <p>2 : <input type="radio" name="LOGO_NAME_PLACEMENT" value="1"/></p>
+                <img src="{{url_for('static', filename = 'IMG11.png')}}" width="600">
+            <p class="underline">Main Image & Little description style</p>
+                <p>1 : <input type="radio" name="IMG0_BIO_PLACEMENT" value="0"/><br /></p>
+                <img src="{{url_for('static', filename = 'IMG20.png')}}" width="300">
+                <p>2 : <input type="radio" name="IMG0_BIO_PLACEMENT" value="1"/></p>
+                <img src="{{url_for('static', filename = 'IMG21.png')}}" width="400">
+            <p class="underline">Socials Links Style</p>
+                <p>1 : <input type="radio" name="SOCIALS_PLACEMENT" value="0"/><br /></p>
+                <img src="{{url_for('static', filename = 'IMG30.png')}}" width="600">
+                <p>2 : <input type="radio" name="SOCIALS_PLACEMENT" value="1"/></p>
+                <img src="{{url_for('static', filename = 'IMG31.png')}}" width="300">
+            <p class="part">-</p>
+            <p><input type="submit" value="Generate your personalized showcase website"></p>
+        </form>
+    </body>
+</html>
